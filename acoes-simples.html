@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="app">
+        <input type="text" name="nome"/>
+        <button class="botao">Botão</button>
+    </div>
+
+    <script>
+            //criando variavel para armezar o click do botão
+            var btnElement = document.querySelector('button.botao');
+            //criando variavel para armezenar o que foi digitado no input
+            var inputElement = document.querySelector('input[name=nome]');
+       
+        
+            btnElement.onclick = function(){
+            //armazenando na variavel text oo valor que foi digitado no input
+            var text = inputElement.value;
+            alert(text);
+        }
+
+        
+    </script>
+</body>
+</html>
